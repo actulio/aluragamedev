@@ -5,8 +5,23 @@ class Enemy extends Animation {
 	}
 	move(){
 		this.xPos = this.xPos - this.velocity;
-		if(this.xPos < - width){
+		if(this.xPos < - width / 4){
 			this.xPos = width;
 		}
+	}
+	getxPos(){
+		return this.xPos;
+	}
+	getSpriteW(){
+		return this.spriteW;
+	}
+	getProportion(){
+		return this.proportion;
+	}
+	resetxPos(){
+		this.xPos = width;
+	}
+	setVelocity(velocity){
+		this.velocity = velocity;
 	}
 } 

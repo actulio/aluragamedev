@@ -11,7 +11,11 @@ class Score {
 	}
 
 	addScore() {
-		this.score = this.score + 0.01;
+		this.score = this.score + 0.05;
+	}
+
+	resetScore(){
+		this.score = 0;
 	}
 
 }
